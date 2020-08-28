@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<p>The onkeyup event occurs when the a keyboard key is on its way UP.</p>
+
+<form>
+  Enter your name:
+  <input type="text"  id="customeremail" name="email"  size="20">
+  <input type="text" name="mySecondInput" size="20">
+</form>
+
+
+<script>
+
+document.getElementById("customeremail").addEventListener("keyup", function(){
+  		customeremail = document.getElementById("customeremail").value;
+  		console.log(customeremail);
+		})
+
+</script>
+</body>
+</html>

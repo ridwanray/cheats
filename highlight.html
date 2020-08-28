@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<script>hljs.initHighlightingOnLoad();</script>
+	<title>Document</title>
+</head>
+<body>
+	
+<pre><code class="python">class Category(models.Model):
+title = models.CharField(max_length=15, unique=True,  null=True)
+timestamp = models.DateTimeField(auto_now_add=True, auto_now=False,  null=True)
+						
+def __str__(self):
+return self.title
+						
+						
+						class Product(models.Model):
+							name = models.CharField(max_length=200)
+							price = models.FloatField()
+							categories = models.ForeignKey('Category', blank=True, on_delete=models.CASCADE, null=True)
+							digital = models.BooleanField(default=False,null=True, blank=True)
+							image = models.ImageField(default="default.jpg")
+						
+							def __str__(self):
+								return self.name</code></pre>
+
+</body>
+</html>
