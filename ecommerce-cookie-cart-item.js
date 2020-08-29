@@ -8,3 +8,10 @@
 31: {quantity: 1}
 33: {quantity: 1}
 57: {quantity: 1}
+	
+	
+	
+	for (const property in cart) {
+     total= total + cart[property]['quantity'];
+  console.log(cart[property]['quantity']);
+}
