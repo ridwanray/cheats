@@ -1,13 +1,10 @@
-17: {quantity: 1}
-18: {quantity: 1}
-20: {quantity: 5}
-21: {quantity: 1}
-23: {quantity: 2}
-26: {quantity: 1}
-28: {quantity: 1}
-31: {quantity: 1}
-33: {quantity: 1}
-57: {quantity: 1}
+cartD = {orange: {quantity: 10}
+apple: {quantity: 20}
+banana: {quantity: 30}
+potato: {quantity: 40}
+lemon: {quantity: 50}
+mango: {quantity: 1}
+}
 	
 	
 	
@@ -15,3 +12,9 @@
      total= total + cart[property]['quantity'];
   console.log(cart[property]['quantity']);
 }
+
+24: {quantity: 4}
+25: {quantity: 12}
+28: {quantity: 27}
+
+https://forums.asp.net/t/1434389.aspx?Check+internet+status+on+form+submit
